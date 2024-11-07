@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        header {
+            background-color: #004225;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            height: 90px;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: floralwhite;
+            padding: 0.5em;
+        }
+
+            nav a {
+                color: black;
+                font-family: sans-serif;
+                font-size: 20px;
+                padding: 0.5em 1em;
+                margin: 0 1em;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background-color: mediumseagreen;
+                }
+
+        #jm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            font-family: 'Sans Serif Collection';
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('pic/CvSU-Front-09-2023-scaled.jpg');
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+           
+        }
+
+        .slider {
+            width: 1000px;
+            display: flex;
+            aspect-ratio: 16 / 9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+            -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+            /*  scrollbar-width: none;  Hide scrollbar Firefox */
+        }
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .slider::-webkit-scrollbar {
+                display: none;
+            }
+
+            .slider img {
+                flex: 1 0 100%;
+                scroll-snap-align: start;
+                object-fit: cover;
+            }
+
+        .slider-nav {
+            margin-left: 120px;
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+            .slider-nav a {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: #fff;
+                opacity: 0.75;
+                transition: opacity ease 250ms;
+            }
+
+                .slider-nav a:hover {
+                    opacity: 1;
+                }
+
+        #img1 {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="jm">
+            <img id="img1" src="pic/Cavite_State_University_(CvSU).png" alt="pic/Cavite_State_University_(CvSU).png" /> &nbsp;&nbsp;
+            <h1 style="margin:0; font-size:40px ">Cavite State University</h1> &nbsp;&nbsp;
+        </div>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contacts.html">Contacts</a>
+    </nav>
+    
+    <section style="margin-top:60px; margin-right:300px" class="container">
+
+        <div class="slider-wrapper">
+
+            <div class="slider">
+
+                <img id="slide-1" src="pic/IMG_7577.jpg" alt="3D rendering of an imaginary orange planet in space" />
+                <img id="slide-2" src="pic/IMG_7547.jpg" alt="3D rendering of an imaginary green planet in space" />
+                <img id="slide-3" src="pic/IMG_7572.jpg" alt="3D rendering of an imaginary blue planet in space" />
+                <img id="slide-4" src="pic/IMG_7580.jpg" />
+                <img id="slide-5" src="pic/IMG_7587.jpg" />
+                <img id="slide-6" src="pic/IMG_7583.jpg" />
+                <img id="slide-7" src="pic/IMG_7589.jpg" />
+                <img id="slide-8" src="pic/IMG_7581.jpg" />
+                <img id="slide-9" src="pic/IMG_7546.jpg" />
+                <img id="slide-10" src="pic/IMG_7601.jpg" />
+            </div>
+
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+                <a href="#slide-7"></a>
+                <a href="#slide-8"></a>
+                <a href="#slide-9"></a>
+                <a href="#slide-10"></a>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
